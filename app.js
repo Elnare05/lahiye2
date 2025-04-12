@@ -1,5 +1,5 @@
-let aZGray=document.querySelector(".first");
-let aZBlack=document.querySelector(".second");
+let aZGray=document.querySelector(".a-z-gray");
+let aZBlack=document.querySelector(".a-z-black");
 aZGray.addEventListener("mouseover",()=>{
     aZGray.classList.toggle('dis-none');
     aZBlack.classList.toggle('dis-none')
@@ -8,8 +8,8 @@ aZGray.addEventListener("mouseout",()=>{
     aZGray.classList.toggle('dis-none');
     aZBlack.classList.toggle('dis-none')
 })
-let clearGray=document.querySelector(".exit");
-let clearPurple=document.querySelector(".collor-exit");
+let clearGray=document.querySelector(".clear-gray");
+let clearPurple=document.querySelector(".clear-purple");
 clearGray.addEventListener("mouseover",()=>{
     clearGray.classList.toggle('dis-none');
     clearPurple.classList.toggle('dis-none');
@@ -58,12 +58,12 @@ addElement.addEventListener('click',() =>{
             imgBlock.classList.add("img-block");
             mainBlock.append(imgBlock);
             let imgGray=document.createElement("img");
-            imgGray.classList.add("exit");
-            imgGray.src="./img/cixish.svg";
+            imgGray.classList.add("clear-gray");
+            imgGray.src="./sekiller/clear_gray.svg";
             let imgPurple=document.createElement("img");
-            imgPurple.classList.add("collor-exit");
+            imgPurple.classList.add("clear-purple");
             imgPurple.classList.add("dis-none");
-            imgPurple.src="./img/purple.svg";
+            imgPurple.src="sekiller/clear_purple.svg";
             imgBlock.append(imgGray);
             imgBlock.append(imgPurple);
             block.classList.remove("dis-none")
@@ -102,10 +102,10 @@ addElement.addEventListener('click',() =>{
 let emptyAndImg=document.querySelector(".empty-and-img");
 let zAGray=document.createElement("img");
 let zABlack=document.createElement("img");
-zAGray.classList.add("first", "dis-none");
-zABlack.classList.add("second", "dis-none");
-zAGray.src="./img/frame4.svg";
-zABlack.src="./img/upp.svg";
+zAGray.classList.add("a-z-gray", "dis-none");
+zABlack.classList.add("a-z-black", "dis-none");
+zAGray.src="./sekiller/z_a_gray.svg";
+zABlack.src="./sekiller/z_a_black.svg";
 emptyAndImg.append(zAGray);
 emptyAndImg.append(zABlack);
 function sortBlocks(location) {
